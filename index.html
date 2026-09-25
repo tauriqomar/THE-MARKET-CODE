@@ -3,299 +3,189 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0a0d0b">
-<meta name="description" content="THE MARKET CODE — Learn the Markets. Build the Skill. Trade With a Plan.">
-<title>THE MARKET CODE — Trading Education Academy</title>
+<title>THE MARKET CODE | Trading Education</title>
+
 <style>
-:root{--bg:#070908;--panel:#0e1310;--panel2:#121813;--line:#243027;--text:#eef5ef;--muted:#9ca99f;--lime:#b8ff3d;--lime2:#86d52a;--danger:#ff6868;--gold:#ffd66b;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#172219 0,#070908 35%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(100% - 32px,var(--max));margin:auto}.nav{position:sticky;top:0;z-index:20;background:#070908dd;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.navin{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:900;letter-spacing:.12em}.brand span{color:var(--lime)}.navlinks{display:flex;gap:18px;align-items:center}.navlinks a{color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--text)}.btn{border:1px solid #334233;background:#121812;color:var(--text);padding:11px 16px;border-radius:12px;cursor:pointer;font-weight:800}.btn.primary{background:var(--lime);color:#071006;border-color:var(--lime)}.btn:hover{transform:translateY(-1px)}.hero{padding:86px 0 62px}.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}.eyebrow{color:var(--lime);font-size:12px;font-weight:900;letter-spacing:.2em;text-transform:uppercase}.hero h1{font-size:clamp(46px,8vw,92px);line-height:.93;margin:14px 0 22px;letter-spacing:-.055em}.hero h1 em{font-style:normal;color:var(--lime)}.hero p{font-size:19px;color:var(--muted);max-width:700px}.hero-card{background:linear-gradient(145deg,#131b15,#0b0f0c);border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 24px 80px #0008}.metric{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:14px 0}.metric:last-child{border:0}.metric b{color:var(--lime)}section{padding:68px 0}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:28px}.section-head h2{font-size:clamp(30px,5vw,52px);line-height:1;margin:0}.section-head p{color:var(--muted);max-width:650px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#101610,#0b0f0c);border:1px solid var(--line);border-radius:18px;padding:22px}.card h3{margin-top:0}.muted{color:var(--muted)}.progressbar{height:10px;background:#1b241d;border-radius:99px;overflow:hidden}.progressbar i{display:block;height:100%;background:var(--lime);width:0}.curriculum{display:grid;gap:12px}.module{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#0c110d}.module-head{padding:20px;display:flex;align-items:center;justify-content:space-between;gap:15px;cursor:pointer}.module-head:hover{background:#111811}.module-title{display:flex;gap:14px;align-items:center}.num{width:42px;height:42px;border-radius:12px;background:#172018;color:var(--lime);display:grid;place-items:center;font-weight:900}.lessons{display:none;border-top:1px solid var(--line)}.module.open .lessons{display:block}.lesson{border-bottom:1px solid #1c251e}.lesson:last-child{border:0}.lesson button{width:100%;background:none;border:0;color:var(--text);padding:17px 20px;text-align:left;display:flex;gap:12px;align-items:center;cursor:pointer}.lesson button:hover{background:#111711}.check{width:21px;height:21px;border:1px solid #455246;border-radius:6px;flex:0 0 auto;display:grid;place-items:center;font-size:12px}.lesson.done .check{background:var(--lime);color:#071006;border-color:var(--lime)}.lesson-content{display:none;padding:0 22px 25px 54px;color:#c9d3cb}.lesson.active .lesson-content{display:block}.lesson-content h4{color:var(--lime);margin:22px 0 7px}.lesson-content ul{padding-left:20px}.lesson-content .example{border-left:3px solid var(--lime);padding:12px 16px;background:#111911;margin:14px 0;border-radius:0 10px 10px 0}.tool-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.tool input,.tool select,.tool textarea{width:100%;padding:12px;background:#080c09;border:1px solid #344037;border-radius:10px;color:var(--text);margin:6px 0 12px}.tool label{font-size:13px;color:var(--muted)}.result{font-size:18px;border:1px solid #334234;padding:14px;border-radius:12px;background:#111811}.checklist label{display:flex;gap:10px;padding:11px 0;border-bottom:1px solid var(--line);cursor:pointer}.journal-form{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.journal-form .wide{grid-column:1/-1}.journal-list{margin-top:18px;display:grid;gap:10px}.journal-entry{border:1px solid var(--line);padding:16px;border-radius:12px;background:#0d120e}.assessment .q{border:1px solid var(--line);border-radius:15px;padding:18px;margin:12px 0;background:#0d120e}.assessment label{display:block;padding:6px;color:#cbd4cd}.assessment input{margin-right:8px}.score{font-size:30px;color:var(--lime);font-weight:900}.plan{background:#0d120e;border:1px solid var(--line);border-radius:20px;padding:24px}.plan-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.cta{padding:70px 30px;text-align:center;border:1px solid #2d3b2f;border-radius:24px;background:radial-gradient(circle at 50% 0%,#1c2c1a,#0d120e)}.price{font-size:44px;font-weight:900;color:var(--lime)}footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:13px}.warning{border:1px solid #66532b;background:#19150b;color:#e9d9a6;padding:16px;border-radius:12px}.small{font-size:12px}.hide{display:none!important}@media(max-width:850px){.hero-grid,.tool-grid,.plan-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.navlinks{display:none}.hero{padding-top:55px}.journal-form{grid-template-columns:1fr 1fr}}@media(max-width:560px){.wrap{width:min(100% - 22px,var(--max))}.grid,.journal-form{grid-template-columns:1fr}.hero h1{font-size:52px}.section-head{display:block}.module-head{padding:15px}.lesson-content{padding-left:28px}.navin{min-height:60px}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Arial,sans-serif;
+  background:#050505;
+  color:#fff;
+  line-height:1.6;
+}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+header{
+  padding:25px 0;
+  border-bottom:1px solid #222;
+}
+.logo{
+  font-size:24px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+.hero{
+  text-align:center;
+  padding:90px 20px 70px;
+}
+.hero h1{
+  font-size:clamp(40px,7vw,75px);
+  font-weight:900;
+  line-height:1;
+  margin-bottom:25px;
+}
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#aaa;
+  font-size:19px;
+}
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:16px 35px;
+  background:#fff;
+  color:#000;
+  text-decoration:none;
+  font-weight:800;
+  border-radius:8px;
+}
+.section{padding:70px 0}
+h2{
+  font-size:35px;
+  margin-bottom:30px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:18px;
+}
+.card{
+  background:#0d0d0d;
+  border:1px solid #222;
+  border-radius:12px;
+  padding:25px;
+}
+.card h3{margin-bottom:10px}
+.card p{color:#999}
+.price{
+  text-align:center;
+  padding:60px 20px;
+  background:#0b0b0b;
+  border:1px solid #222;
+  border-radius:15px;
+}
+.price h2{margin-bottom:10px}
+.price-number{
+  font-size:50px;
+  font-weight:900;
+}
+.small{
+  color:#888;
+  font-size:14px;
+}
+footer{
+  text-align:center;
+  padding:40px 20px;
+  border-top:1px solid #222;
+  color:#777;
+}
 </style>
 </head>
+
 <body>
-<nav class="nav"><div class="wrap navin"><a class="brand" href="#top">THE <span>MARKET</span> CODE</a><div class="navlinks"><a href="#course">Course</a><a href="#tools">Tools</a><a href="#plan">Trading Plan</a><a href="#assessment">Assessment</a></div><a class="btn primary" href="https://payhip.com/b/eOu6V" target="_blank" rel="noopener">Get Access</a></div></nav>
 
-<header id="top" class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Premium Trading Education</div><h1>Learn the <em>Markets.</em><br>Build the Skill.<br>Trade With a Plan.</h1><p>A complete self-paced trading education system covering market mechanics, analysis, risk, psychology, strategy design, testing, journaling and professional execution.</p><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:25px"><a class="btn primary" href="https://payhip.com/b/eOu6V" target="_blank" rel="noopener">Get Access — R1,000</a><a class="btn" href="#tools">Open Trading Tools</a></div></div><div class="hero-card"><div class="eyebrow">Your Progress</div><h2><span id="pct">0</span>% complete</h2><div class="progressbar"><i id="progressFill"></i></div><div class="metric"><span>Modules</span><b>15</b></div><div class="metric"><span>Lessons</span><b id="lessonCount">0</b></div><div class="metric"><span>Saved locally</span><b>YES</b></div></div></div></header>
+<header>
+<div class="container">
+<div class="logo">THE MARKET CODE</div>
+</div>
+</header>
 
-<section id="course"><div class="wrap"><div class="section-head"><div><div class="eyebrow">The Curriculum</div><h2>15 modules. One operating system.</h2></div><p>Open a module, select a lesson to study the full material, and mark it complete when you can explain and apply the concept without relying on the lesson.</p></div><div id="curriculum" class="curriculum"></div></div></section>
+<section class="hero">
+<div class="container">
 
-<section id="tools"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Interactive Desk</div><h2>Tools you can actually use.</h2></div><p>These calculators are educational aids. Position sizing must also account for the instrument's contract specification, pip/point value, currency conversion, tick value, fees and execution.</p></div>
-<div class="tool-grid">
-<div class="card tool"><h3>Risk Calculator</h3><label>Account balance</label><input id="balance" type="number" value="10000"><label>Risk %</label><input id="riskPct" type="number" value="1" step=".1"><label>Stop distance (points/pips/units)</label><input id="stopDist" type="number" value="100"><label>Value per point per 1 unit</label><input id="valuePoint" type="number" value="1" step=".0001"><button class="btn primary" onclick="riskCalc()">Calculate</button><div id="riskOut" class="result" style="margin-top:12px">Risk amount: —<br>Approx. position size: —</div></div>
-<div class="card tool"><h3>Risk / Reward</h3><label>Entry</label><input id="entry" type="number" step=".0001" value="100"><label>Stop</label><input id="stop" type="number" step=".0001" value="95"><label>Target</label><input id="target" type="number" step=".0001" value="110"><button class="btn primary" onclick="rrCalc()">Calculate</button><div id="rrOut" class="result" style="margin-top:12px">Risk: —<br>Reward: —<br>R:R: —</div></div>
-<div class="card checklist"><h3>Pre-Trade Checklist</h3><div id="checklist"></div><button class="btn" onclick="resetChecklist()" style="margin-top:12px">Reset</button></div>
-<div class="card"><h3>Journal</h3><div class="journal-form">
-<label>Date<input id="jDate" type="date"></label><label>Market<input id="jMarket" placeholder="EUR/USD"></label><label>Direction<select id="jDir"><option>Long</option><option>Short</option></select></label><label>Timeframe<input id="jTf" placeholder="1H"></label><label>Setup<input id="jSetup" placeholder="Pullback"></label><label>Entry<input id="jEntry" type="number" step=".0001"></label><label>Stop<input id="jStop" type="number" step=".0001"></label><label>Target<input id="jTarget" type="number" step=".0001"></label><label>Position size<input id="jSize" type="number"></label><label>Risk<input id="jRisk" type="number"></label><label>Result<input id="jResult" placeholder="+2R / -1R"></label><label class="wide">Notes<textarea id="jNotes"></textarea></label><label class="wide">Lesson learned<textarea id="jLesson"></textarea></label></div><button class="btn primary" onclick="saveJournal()">Save Trade</button><div id="journalList" class="journal-list"></div></div>
-</div></div></section>
+<h1>LEARN THE MARKETS.<br>BUILD THE SKILL.</h1>
 
-<section id="plan"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Build Your System</div><h2>Printable-style trading plan.</h2></div><p>Fill this out after studying the course. A plan is a set of rules; it is not a promise that a trade will work.</p></div><div class="plan"><div class="plan-grid">
-<div><h3>1. Market & Time</h3><p>Markets I trade: __________________________</p><p>Primary timeframe: ________________________</p><p>Execution timeframe: ______________________</p><p>Trading hours: ____________________________</p></div>
-<div><h3>2. Strategy</h3><p>Primary setup: _____________________________</p><p>Market conditions required: _______________</p><p>Entry trigger: _____________________________</p><p>Invalidation: ______________________________</p></div>
-<div><h3>3. Risk Rules</h3><p>Risk per trade: ______ % / R________</p><p>Max daily loss: ___________________________</p><p>Max weekly loss: _________________________</p><p>Max open correlated exposure: ____________</p></div>
-<div><h3>4. Management</h3><p>Stop method: ______________________________</p><p>Target method: ____________________________</p><p>Break-even rule: __________________________</p><p>Partial-exit rule: _________________________</p></div>
-<div><h3>5. No-Trade Rules</h3><p>Major news conditions: ____________________</p><p>Emotional state that stops me: ____________</p><p>Maximum trades/day: ______________________</p><p>Other invalid conditions: _________________</p></div>
-<div><h3>6. Review</h3><p>Daily review time: ________________________</p><p>Weekly review day: _______________________</p><p>Metrics reviewed: ________________________</p><p>Change rules: Only after evidence from a meaningful sample.</p></div>
-</div><hr style="border-color:var(--line);margin:25px 0"><p><b>My operating principle:</b> I will execute only when my predefined conditions are present, size positions before entry, accept uncertainty, record the outcome and review evidence rather than judging a single trade.</p></div></div></section>
+<p>
+A structured trading education designed to help you understand the markets,
+develop a trading plan and approach trading with discipline.
+</p>
 
-<section id="assessment"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Final Assessment</div><h2>Test your understanding.</h2></div><p>This checks knowledge, not trading competence. A high score does not establish that someone can trade profitably or safely.</p></div><div id="quiz" class="assessment"></div><button class="btn primary" onclick="gradeQuiz()">Submit Assessment</button><div id="scoreBox" class="card hide" style="margin-top:16px"></div></div></section>
+<a class="btn" href="https://payhip.com/b/eOu6V" target="_blank" rel="noopener">
+GET ACCESS — R1,000
+</a>
 
-<section><div class="wrap"><div class="cta"><div class="eyebrow">THE MARKET CODE</div><h2>Knowledge → Rules → Evidence → Execution</h2><p class="muted">The objective is not to predict every move. It is to build a repeatable process for making decisions under uncertainty.</p><div class="price">R1,000</div><p class="small">One-time course access. Secure checkout is handled through Payhip.</p><a class="btn primary" href="https://payhip.com/b/eOu6V" target="_blank" rel="noopener">Get THE MARKET CODE — R1,000</a></div></div></section>
+</div>
+</section>
 
-<footer><div class="wrap"><p><b>THE MARKET CODE</b> — Educational trading academy.</p><div class="warning"><b>Important financial disclaimer:</b> This website provides educational material only and is not personalised financial, investment, tax or legal advice. Trading involves substantial risk. Losses can be substantial and may exceed expectations depending on the instrument, leverage, gaps, liquidity and execution. No strategy guarantees profit. Past performance does not guarantee future results. Examples are illustrative and are not recommendations or universally appropriate risk parameters. Students should conduct their own research and consider their circumstances, objectives and risk tolerance. Where regulated products or services are involved, seek appropriate professional advice and verify applicable local requirements.</div><p>© <span id="year"></span> THE MARKET CODE. All rights reserved.</p></div></footer>
+<section class="section">
+<div class="container">
 
-<script>
-const modules=[
-["FINANCIAL MARKET FOUNDATIONS",[
-["What Financial Markets Are","A financial market is a system in which claims, assets or contracts can be exchanged. Stocks represent ownership interests; bonds represent debt; currencies are exchanged against one another; commodities can be traded through physical or derivative markets. Prices are formed as participants submit offers to buy and sell, while information, expectations, liquidity and risk influence the prices at which transactions occur.","Think of the market as an auction operating continuously or at scheduled times. If buyers become willing to pay more aggressively than sellers are willing to accept, the traded price can rise. The opposite can happen when selling pressure dominates."],
-["How Markets Work","Markets connect participants who have different objectives. A transaction requires a willing buyer and seller at an executable price, but the reason each participant trades can differ. Market prices can change because new information changes expectations, because liquidity changes, or because order flow temporarily becomes imbalanced.","A quoted price is not a guarantee that an unlimited amount can be transacted there. Available liquidity can change between the moment an order is sent and the moment it executes."],
-["Buyers, Sellers & Market Participants","Participants include retail traders, long-term investors, commercial firms, banks, asset managers, market makers, hedge funds, pension funds and other institutions. Some hedge business risks; others seek investment returns; others provide liquidity or facilitate transactions.","A useful question is not 'what do institutions want?' but 'what observable price and volume behaviour is occurring, and what evidence supports my interpretation?'"],
-["Brokers & Exchanges","A broker can provide access to a market or venue and may handle order routing, custody or other services. An exchange is an organized marketplace with rules for listing, trading, clearing and settlement. Not every market works through one central exchange; OTC markets can have different structures.","Before trading, understand who holds your funds, how orders are executed, fees, conflicts, regulation, product specifications and the broker's execution policy."],
-["Bid, Ask & Spread","The bid is the price at which you can generally sell immediately; the ask is the price at which you can generally buy immediately. The spread is the difference between them. A narrower spread usually reduces the immediate transaction-cost component, all else equal.","Example: if EUR/USD is quoted 1.10000 bid and 1.10002 ask, the quoted spread is 0.00002, or 0.2 pip under a 5-decimal convention."],
-["Slippage","Slippage is the difference between the expected or requested execution price and the actual execution price. It can occur during fast markets, low liquidity, news, large orders or gaps.","A stop order does not necessarily guarantee its stop price. Your plan should account for possible execution variation, especially around major events."],
-["Market, Limit & Stop Orders","A market order prioritizes execution rather than a specific price. A limit order specifies a maximum buy price or minimum sell price and may not fill. A stop order activates after a trigger level is reached and then becomes an executable order according to the venue/product rules.","Each order type trades off execution certainty against price certainty. Learn your broker's exact order behaviour before risking capital."],
-["Leverage & Margin","Leverage allows a trader to control a larger notional exposure with less initial capital. Margin is the capital or collateral required to support a position. Leverage magnifies both gains and losses relative to the capital committed.","Example: R10,000 supporting R100,000 notional exposure is 10:1 notional leverage. A 1% adverse move on R100,000 is R1,000 before costs—10% of the R10,000 capital."],
-["Trading vs Investing","Trading often emphasizes shorter holding periods, defined setups and active risk management. Investing commonly emphasizes longer horizons, ownership, valuation, income or long-term growth. The distinction is about process and horizon, not whether one is inherently safer.","A person can invest and trade simultaneously, but mixing the rules can create confusion. Define the objective, time horizon, risk budget and decision process for each activity."]
-]],
-["UNDERSTANDING DIFFERENT MARKETS",[
-["Forex","Foreign exchange involves exchanging one currency for another. Quotes are pairs, such as EUR/USD, where the first currency is the base and the second is the quote. Drivers include interest-rate expectations, economic data, risk sentiment and capital flows.","Risks include leverage, rapid news-driven movement, spread changes and OTC execution differences. Understand the pair's contract size, pip value and trading hours."],
-["Stocks","A stock represents an ownership interest in a company. Stock prices can respond to earnings, guidance, valuation, industry conditions, interest rates, macroeconomic conditions and company-specific news.","Single-company exposure includes business-specific risks such as weak earnings, regulation, competition and management decisions. A trader should distinguish price movement from the underlying business story."],
-["ETFs","Exchange-traded funds hold a portfolio or track an index, sector, commodity exposure or other strategy. They provide a way to obtain diversified or targeted exposure through one traded instrument.","ETF risks include market risk, tracking differences, liquidity, spread and—in some products—leverage or derivatives exposure. Read the fund documentation."],
-["Indices","An index aggregates a group of securities according to a methodology. It can represent a market, sector or region. Index composition and weighting determine what the index actually measures.","Trading an index derivative or ETF is not identical to owning every constituent. Understand the product used, its hours, contract specifications and adjustment mechanisms."],
-["Commodities","Commodities include energy, metals, agricultural products and other raw materials. Prices can respond to supply, demand, inventories, weather, geopolitics, production decisions and currency movements.","Futures and CFDs can create leverage and rollover/financing considerations. Physical commodity ownership has different risks from derivative exposure."],
-["Crypto","Cryptoassets trade on digital-asset venues and can experience large price movements and changing liquidity. Market structure varies by asset and venue.","Risks include extreme volatility, custody, platform risk, regulatory changes, technological risk and market fragmentation. Never assume that a liquid-looking chart guarantees execution at the displayed price."],
-["Market Sessions & Trading Hours","Global markets operate across different time zones. Forex activity commonly changes as major financial centres open and overlap. Stock exchanges have defined sessions, while crypto markets may trade continuously.","Session overlap can increase activity, but activity is not automatically an opportunity. Match your strategy to the times when its historical conditions are present."],
-["Liquidity & Volatility","Liquidity describes the ability to transact with limited price impact. Volatility describes the magnitude and variability of price changes. They are related but not identical.","A volatile market can still be liquid, and a quiet market can still have poor liquidity. Your position size should reflect the instrument's actual movement and execution characteristics."],
-["Correlation","Correlation describes how two return series have historically moved relative to one another. Positive correlation can create hidden concentration when several positions are effectively the same bet.","Correlation is not constant. Stress periods can change relationships, so portfolio exposure should be reviewed rather than assumed."],
-["Choosing a Market","Choose based on liquidity, product structure, trading hours, volatility, costs, accessibility, regulation and whether the market suits your strategy and schedule.","A market is not attractive merely because it moves a lot. Your objective is a process you can execute consistently with controlled risk."]
-]],
-["CHARTS & CANDLESTICKS",[
-["Line Charts","A line chart commonly connects closing prices, creating a clean view of directional movement. It is useful for reducing visual noise and identifying broad trends or levels.","Its limitation is lost intraperiod information: you cannot see the open, high and low from a simple close-only line."],
-["Bar Charts","A price bar shows open, high, low and close. It contains the same core information as a candlestick but uses a different visual convention.","OHLC data is foundational because many price-action concepts are simply interpretations of these four values."],
-["Candlestick Anatomy","A candle represents price activity over a selected period. The body shows the distance between open and close; the wick or shadow shows prices reached beyond the body.","A candle must be interpreted in context. The same shape can mean different things near support, inside a trend, after a news spike or in a range."],
-["Open, High, Low, Close","Open is the first recorded price for the period, high the highest, low the lowest and close the final recorded price. These four values form OHLC data.","The range is high minus low. The body size is the absolute difference between open and close. These measurements can help describe momentum and rejection."],
-["Bullish & Bearish Candles","A bullish candle closes above its open; a bearish candle closes below its open. The terms describe the candle, not a guarantee about what happens next.","Large bodies can indicate strong directional movement during that period, but the reason and sustainability of the movement require context."],
-["Doji","A doji has a small body relative to its range, meaning open and close are close together. It can reflect temporary balance or uncertainty.","A doji is not automatically a reversal signal. Its location, preceding trend, range and subsequent confirmation matter."],
-["Pin Bars","A pin bar is commonly used to describe a candle with a pronounced wick and relatively small body, suggesting rejection of prices beyond the wick.","The pattern is most useful when linked to a meaningful level or structure. It is not proof that a reversal will occur."],
-["Engulfing Candles","A bullish engulfing pattern generally involves a bullish body that overtakes the prior bearish body; bearish engulfing is the reverse.","Definitions vary by trader, especially around wicks. Treat the pattern as a description and confirmation component, not a standalone prediction."],
-["Inside Bars","An inside bar forms when a candle's range is contained within the prior candle's range. It represents temporary compression.","A breakout from an inside bar can fail. Context, direction, volatility and nearby levels should determine whether the pattern fits your rules."],
-["Timeframes","A timeframe groups price data into periods such as 5 minutes, 1 hour or 1 day. Lower timeframes show more detail and noise; higher timeframes show broader structure.","Changing timeframe changes the apparent market structure. A setup should specify the timeframe on which each rule is evaluated."],
-["Multi-Timeframe Analysis","Multi-timeframe analysis uses a higher timeframe for broader context and a lower timeframe for execution or refinement.","Avoid forcing the lower timeframe to tell the story you want. Define in advance which timeframe controls trend, level and entry decisions."]
-]],
-["MARKET STRUCTURE",[
-["Swing Highs & Swing Lows","A swing high is a local peak relative to nearby prices; a swing low is a local trough. Exact definitions vary by method and timeframe.","Structure becomes useful when swings are identified consistently rather than selectively after the fact."],
-["Higher Highs & Higher Lows","A sequence of higher highs and higher lows describes rising swing structure. Lower highs and lower lows describe falling swing structure.","Do not label every small fluctuation a structural swing. Use a consistent swing definition appropriate to your timeframe."],
-["Trends","A trend is persistent directional structure over a chosen timeframe. Uptrends generally contain rising swing points; downtrends contain falling swing points.","Trends can coexist across timeframes. A daily uptrend can contain a short-term downtrend."],
-["Ranges","A range occurs when price repeatedly rotates between broadly defined boundaries without sustained directional structure.","Ranges can last longer than expected. Avoid assuming a breakout is imminent simply because price has spent time consolidating."],
-["Consolidation","Consolidation is a period of reduced directional progress where price compresses or rotates around an area.","It can precede continuation or reversal. The correct response is to wait for your defined evidence rather than predict the outcome."],
-["Break of Structure","A break of structure occurs when price violates a previously defined swing point according to the trader's structural rules.","The significance depends on which swing was broken, the timeframe, momentum and whether price accepts beyond the level."],
-["Change of Character","Change of character is a discretionary label often used when price behaviour shifts from one structural pattern to another.","Because definitions differ, write an objective rule for what qualifies before using the term in a strategy."],
-["Trend Identification","A robust trend process can combine swing sequence, slope, location and higher-timeframe context.","Example rule: define the higher timeframe as bullish only when your chosen swing algorithm has printed a higher high after a higher low. This is a rule, not a prediction."],
-["Structure-Based Analysis","Start with observable swings, identify the current regime, mark important levels and then define scenarios.","The key skill is separating what price has done from what you expect it to do."]
-]],
-["SUPPORT & RESISTANCE",[
-["Support","Support is an area where buying interest has historically been sufficient to interrupt or slow declines. It is better treated as a zone than an exact magic price.","Support can fail. Its usefulness comes from observed behaviour and the risk/reward available around it, not certainty."],
-["Resistance","Resistance is an area where selling pressure has historically interrupted or slowed advances.","Resistance can break and later become support, but the transition should be treated as a hypothesis until price behaviour confirms it."],
-["Zones vs Lines","Markets are auctions, not perfectly precise lines. Zones acknowledge that transactions can occur across a range of prices.","Use zones wide enough to represent meaningful behaviour but narrow enough to create a testable rule."],
-["Previous Highs & Lows","Previous highs and lows can attract attention because participants can see them and because stops or breakout orders may cluster around obvious levels.","A level being obvious does not guarantee a reaction. Use it as context, not certainty."],
-["Psychological Levels","Round numbers such as 1.1000 in EUR/USD or 100 in a stock can become reference points because traders naturally organize information around them.","Psychological importance varies by instrument and price scale."],
-["Role Reversal","A broken resistance area may later act as support, or broken support may later act as resistance. This is commonly called role reversal.","Do not assume every breakout creates a durable role reversal; require a defined retest or acceptance condition."],
-["Breakouts","A breakout is movement beyond a defined level. A useful breakout rule specifies what counts as a break: close, intrabar touch, volume, volatility or another criterion.","The more subjective the definition, the harder the strategy is to test."],
-["Retests","A retest occurs when price returns toward a previously broken level. Traders may use it to seek confirmation that the level has changed function.","Retests can fail immediately or never occur. Do not chase a missed retest outside your rules."],
-["False Breakouts","A false breakout describes price moving beyond a level and then returning inside it. It can occur because of insufficient follow-through, liquidity changes or new information.","Calling every failed move a deliberate 'trap' goes beyond what the chart can prove. Focus on the observable sequence."],
-["Finding Important Levels","Prioritize levels associated with repeated reactions, major swing points, higher-timeframe structure and meaningful market events.","Too many lines reduce clarity. Mark only levels that could change your decision."]
-]],
-["TECHNICAL ANALYSIS",[
-["Trendlines","A trendline connects selected swing points to visualize directional slope. A valid rule must define which swings qualify and whether a touch or close counts as a break.","Trendlines are subjective and can be redrawn. Treat them as a visual tool rather than a law of price."],
-["Channels","A channel combines two roughly parallel boundaries around price movement. It can help frame pullbacks and extensions.","Markets frequently expand or contract beyond channels. A channel is a map, not a guarantee."],
-["Moving Averages","A moving average smooths price by calculating an average over a rolling window. A simple moving average gives equal weight to observations; an exponential moving average weights recent observations more heavily.","Traders use moving averages for trend context, dynamic reference levels and crossovers. They lag price and can perform poorly in sideways conditions."],
-["RSI","The Relative Strength Index compares average gains with average losses over a chosen lookback and transforms the result to a 0–100 scale. A common formulation is RSI = 100 - 100/(1+RS), where RS is average gain divided by average loss.","Overbought/oversold readings are not automatic reversal signals. RSI can remain elevated during strong trends. Divergence also requires context and can persist."],
-["MACD","MACD commonly uses the difference between a faster and slower exponential moving average, with a signal line that smooths the MACD series. The histogram displays the difference between MACD and its signal line.","It is used for momentum and trend context but is derived from price, so it does not provide independent information. It can lag and whipsaw."],
-["Stochastic","The stochastic oscillator compares the current close with the recent high-low range and expresses the position on a 0–100 scale.","High readings mean price is near the top of its recent range, not that a reversal must occur. It can remain high or low in trends."],
-["ATR","Average True Range measures average true range, where true range accounts for the current high-low and gaps from the prior close. ATR is a volatility measure, not a directional indicator.","Traders use ATR to contextualize stop distance or volatility. It does not tell you whether price should rise or fall."],
-["Volume","Volume measures the quantity of trading activity according to the instrument and data source. In centralized markets it can represent reported transactions; in some OTC markets, available volume data may be proxy or broker-specific.","Volume can help assess participation, but it is not universally comparable across venues."],
-["Volatility","Volatility measures variability of returns or price movement. Historical volatility looks backward; implied volatility in options reflects market pricing of future uncertainty under a model.","High volatility can increase opportunity and risk simultaneously. A strategy should define how it adapts."],
-["Divergence","Divergence describes a mismatch between price movement and an indicator's movement. It can suggest changing momentum but does not identify timing by itself.","Divergence can persist for a long time. Use it as context and test whether it adds value to your specific rules."],
-["Combining Indicators","Indicators are transformations of price, volume or related data. Combining many indicators can create duplicated information and conflicting signals.","A better approach is to assign each tool a distinct job: regime, momentum, volatility or trigger. Remove tools that do not improve measurable decisions."]
-]],
-["PRICE ACTION",[
-["Momentum","Momentum describes the speed or persistence of directional movement. Large candles, expanding ranges and strong closes can indicate increased directional activity.","Momentum is contextual. A large candle into major resistance can mean something different from a large candle breaking into open space."],
-["Rejection","Rejection refers to price moving into an area and then closing away from it, often leaving a wick.","A rejection candle becomes more meaningful when it occurs at a predefined level and fits the broader structure."],
-["Pullbacks","A pullback is a counter-move within a broader directional move. Traders may seek entries during pullbacks to improve location rather than chase extended price.","Not every counter-move is a pullback; some are the start of a reversal."],
-["Continuation","Continuation means price resumes the prior directional behaviour after a pause or pullback.","A continuation setup needs an objective trigger and invalidation, not just a belief that the trend is strong."],
-["Reversal","A reversal is a meaningful change from one directional regime to another. It should be distinguished from a temporary retracement.","Look for evidence such as structural change, failed continuation and subsequent acceptance in the new direction."],
-["Consolidation","During consolidation, price may repeatedly rotate within a bounded area. The trader's job is to know whether their strategy trades the range or waits for expansion.","Avoid applying trend strategies indiscriminately to ranges."],
-["Breakouts","Price-action breakout trading focuses on observable movement beyond a defined boundary, ideally with a clear invalidation point.","Define whether you enter immediately, on a close, or on a retest and test the choice."],
-["Candlestick Confirmation","Candles can confirm behaviour such as rejection or momentum. Confirmation should occur after the context is established, not become an excuse to enter every attractive candle.","Use a checklist so confirmation remains objective."],
-["Price-Action Setup","A complete setup can be written as: context → level → trigger → invalidation → target → risk.","If any component is undefined, the setup is incomplete and difficult to test."],
-["Combining Price Action With Structure","Structure provides the map; price action provides the local evidence. For example, a bullish higher-timeframe structure plus a pullback into support plus a defined bullish trigger can form a testable setup.","This combination still produces losing trades. The edge, if any, must be established through testing."]
-]],
-["SUPPLY, DEMAND & LIQUIDITY",[
-["Supply","Supply zones are areas traders interpret as places where selling previously overwhelmed buying. In chart practice, these zones are usually inferred from strong departures or repeated reactions.","The chart can show price behaviour, but it cannot directly reveal every participant's private order book or intention."],
-["Demand","Demand zones are areas interpreted as places where buying previously overwhelmed selling.","Treat demand as a hypothesis about historical behaviour, not proof of hidden institutional orders."],
-["Liquidity","Liquidity broadly concerns the ability to transact without large price impact. Traders also use 'liquidity' to describe areas where orders may cluster, such as around obvious highs and lows.","These meanings should not be conflated. A visible high is not direct evidence that a specific institution placed stops there."],
-["Liquidity Pools & Stop Clusters","A stop cluster is a hypothetical concentration of stop orders around an obvious level. Such clustering can influence short-term execution if enough orders are present.","Retail charts cannot directly verify the complete set of stop orders across all venues. Describe these areas as potential liquidity, not guaranteed pools."],
-["Liquidity Sweeps","A liquidity sweep is a discretionary term for price briefly moving beyond an obvious level and then reversing or returning inside.","The observable fact is the price movement. Claims about deliberate stop hunting or institutional intent require evidence not normally available from a chart alone."],
-["Imbalances","An imbalance describes a rapid movement where price trades relatively little in part of a range compared with surrounding activity. Different methodologies define this differently.","It can be marked as an area for future interaction, but there is no universal rule that price must fill an imbalance."],
-["Gaps","A gap is a discontinuity between one quoted/traded price and the next relevant price. Stock markets can gap between sessions; some markets or products behave differently.","Gaps can be caused by new information, trading-hour differences or liquidity conditions. Do not assume every gap will close."],
-["Fair-Value Concepts","Some trading frameworks define 'fair value' zones or gaps using particular price relationships. These are model-specific concepts rather than universally recognized laws.","Document your exact definition before backtesting. Different traders can mark different zones on the same chart."],
-["Institutional Order-Flow Concepts","Institutional order-flow frameworks attempt to interpret price movement through concepts such as liquidity, blocks and imbalances.","These can be useful analytical models, but a chart alone does not prove that a particular institution created a particular candle. Keep the distinction between model and observable evidence."],
-["Combining With Structure","A disciplined approach can mark higher-timeframe structure first, then identify supply/demand or liquidity areas, and finally use price action for execution.","This creates a hierarchy: observable structure → defined area → objective trigger → predefined risk."]
-]],
-["FUNDAMENTAL ANALYSIS",[
-["What Moves Markets","Prices reflect changing expectations about future cash flows, economic conditions, interest rates, risk and supply/demand. The same news can produce different price reactions depending on what was already expected.","Focus on surprise relative to expectations, not just whether a number is 'good' or 'bad'."],
-["Interest Rates","Interest rates affect borrowing costs, savings returns, valuations and currency attractiveness. Expected future rates can matter before a central bank actually changes rates.","Markets can react to guidance and expectations, not only the headline rate decision."],
-["Central Banks","Central banks influence monetary conditions through policy rates, balance-sheet tools, communication and other mechanisms depending on jurisdiction.","Statements can move markets because they alter expectations. Read the actual release and distinguish official facts from commentary."],
-["Inflation & CPI","Inflation measures changes in the general level of prices. CPI is one commonly used consumer-price measure. Persistent inflation can influence monetary policy expectations.","One monthly reading is noisy. Examine trends, components and expectations."],
-["Employment","Employment, unemployment, wages and related labour indicators provide information about economic activity and household income.","Employment releases can move markets sharply. Execution risk can rise during scheduled announcements."],
-["GDP & Growth","Gross domestic product measures the value of final goods and services produced within an economy over a period. It is an important but lagging and revised measure.","Use GDP alongside more timely indicators such as surveys, employment and consumption data."],
-["Monetary Policy","Monetary policy is the process by which a central bank influences financial conditions. Traders often watch the policy path rather than one decision.","A strategy should specify whether high-impact announcements are tradable, avoided or handled with reduced exposure."],
-["Economic Calendars","Economic calendars list scheduled releases and expected times. Use them to identify periods of potential volatility.","Check the source and time zone. Calendar estimates can change and releases can be revised."],
-["News Events","News can create gaps, rapid repricing and slippage. A headline may arrive unexpectedly even outside scheduled events.","If your strategy is not designed for event risk, an explicit no-trade window can be more consistent than improvisation."],
-["Earnings & Company Fundamentals","For stocks, earnings, revenue, margins, guidance, balance-sheet strength and cash generation can influence valuation expectations.","Short-term price can diverge from fundamentals. Trading a stock around earnings is a distinct event-risk strategy."],
-["Valuation Concepts","Valuation compares a company's market price with measures such as earnings, cash flow, sales or assets. Ratios such as P/E are useful only with context.","A low multiple is not automatically cheap; a high multiple is not automatically expensive. Growth, quality, cyclicality, rates and expectations matter."],
-["Fundamental vs Technical Analysis","Fundamental analysis focuses on economic or business drivers; technical analysis focuses on price and related market data.","They can be combined. For example, fundamentals can define the environment while technical rules determine entry and risk. Neither removes uncertainty."]
-]],
-["RISK MANAGEMENT",[
-["Risk Per Trade","Risk per trade is the amount you are willing to lose if the stop is reached. A percentage model scales risk with account size.","Example: R10,000 account × 1% = R100 planned risk. This is an illustration, not a universally appropriate risk level."],
-["Position Sizing","Position size converts your allowed money risk into units/contracts/shares based on stop distance and instrument value.","Basic formula: position size = risk amount ÷ (stop distance × value per unit of movement). Contract specifications can make the practical calculation more complex."],
-["Stop Losses","A stop defines the price or condition at which the original trade thesis is invalidated or risk is exited. It should be positioned from the setup logic, not chosen only to achieve a desired size.","A stop does not guarantee the exact exit price in all products or conditions."],
-["Take Profits","A target is a predefined area where the trade thesis expects a favourable outcome or where risk is reduced according to the plan.","Targets can be fixed, structure-based, volatility-based or managed dynamically. Test the rule rather than selecting targets emotionally."],
-["Risk/Reward","Risk/reward compares potential reward with defined risk. Formula: R:R = reward ÷ risk. If risk is 5 points and target reward is 10 points, R:R = 10/5 = 2:1.","A high R:R does not create an edge by itself. Win rate, costs and execution matter."],
-["Maximum Daily Loss","A daily loss limit stops a bad session from becoming a catastrophic session. It can be expressed in currency, percentage or R-multiples.","Example: if the rule is -3R maximum and each trade risks R100, the daily stop is R300. The trader then stops, regardless of temptation."],
-["Maximum Weekly Loss","A weekly limit creates another layer of capital protection and helps prevent attempts to recover losses quickly.","The limit should be defined before the week starts, not changed after losses."],
-["Maximum Drawdown","Drawdown measures decline from an account's peak to a subsequent trough. Formula: drawdown % = (peak equity − trough equity) ÷ peak equity × 100.","Example: peak R12,000, trough R10,800 → R1,200/R12,000 = 10% drawdown."],
-["Losing Streaks","Losing streaks are normal in probabilistic systems. A trader must know the strategy's historical streak distribution before deciding that a losing run means the strategy is broken.","If a strategy has a 50% win rate, five losses can occur by chance. The exact probability depends on assumptions about independence and changing conditions."],
-["Capital Preservation","Capital preservation means keeping losses within predefined limits so that the account remains capable of participating in future opportunities.","A 50% drawdown requires a 100% gain to return to the starting balance. This illustrates why drawdown control matters."],
-["Leverage Risk","Leverage reduces the capital required to control a notional position but increases the sensitivity of account equity to price movement.","Never confuse margin requirement with the amount you can safely lose. The position's economic exposure is what matters."],
-["Slippage & Gap Risk","Slippage can increase realised loss. Gaps can cause price to move past a stop between executable prices.","Event risk, overnight exposure and illiquid instruments require additional caution."],
-["Correlated Positions","Five positions can represent one large macro bet if they are highly correlated. Aggregate exposure should be considered across positions.","Example: long several closely related assets can multiply downside when the shared factor moves against you."],
-["Portfolio Exposure","Portfolio risk includes open risk, realised risk, correlated risk and potential stress scenarios.","Track total open risk in R and currency. Define maximum simultaneous exposure before entering the first trade."],
-["Risk Mathematics","Key formulas: Risk amount = account balance × risk%. Position size = risk amount ÷ (stop distance × value per unit). R:R = reward ÷ risk. Win rate = wins ÷ total trades ×100. Average win = total winning R ÷ winning trades. Average loss = total losing R ÷ losing trades. Expectancy = (win rate × average win) − (loss rate × average loss).","Example: 45% wins, average win +2R, 55% losses, average loss -1R. Expectancy = (0.45×2) − (0.55×1) = 0.35R per trade before costs. This is an illustrative statistical example, not a forecast."]
-]],
-["TRADING PSYCHOLOGY",[
-["Fear","Fear can cause premature exits, avoidance of valid setups or excessive size reduction. The solution is not to eliminate emotion but to reduce discretionary decisions through predefined rules.","A written risk limit can make uncertainty easier to tolerate because the maximum planned loss is known."],
-["Greed","Greed can appear as oversized positions, moving targets, refusing to take a planned exit or adding to losers without a rule.","Use position sizing and management rules that are decided before entry."],
-["FOMO","Fear of missing out often appears after a fast move. Chasing usually changes the entry price and risk structure.","A missed trade is not a loss. The rule can simply be: if the entry condition is gone, wait for the next valid setup."],
-["Revenge Trading","Revenge trading is taking trades to recover a recent loss rather than because the setup meets the plan.","A hard daily loss limit and mandatory cooldown can interrupt the behaviour."],
-["Overtrading","Overtrading means taking more exposure or more trades than the strategy and risk plan justify.","Track trades by session and setup. If extra trades do not improve expectancy, remove them."],
-["Hesitation","Hesitation can come from unclear rules or fear of loss. If entry criteria are objective, the decision becomes a checklist rather than a debate.","If criteria are not clear, do not force execution; improve the plan and test it."],
-["Confirmation Bias","Confirmation bias is the tendency to favour information supporting an existing belief. Traders can see bullish evidence while dismissing contradictory structure.","Before entering, write one condition that would prove your thesis wrong."],
-["Loss Aversion","Loss aversion describes the tendency to experience losses as more psychologically significant than equivalent gains. In trading, it can lead to holding losers and cutting winners.","Use predefined exits and review outcomes statistically rather than emotionally."],
-["Recency Bias","Recent wins or losses can distort expectations about the next trade. One outcome provides very little information about long-term edge.","Judge strategy performance over an appropriate sample, not a single trade."],
-["Discipline","Discipline is adherence to a tested process even when the outcome of an individual trade is uncertain.","Measure process compliance separately from P/L. A losing trade can be well executed; a winning trade can violate the plan."],
-["Patience","Patience means waiting for conditions rather than manufacturing opportunities.","A professional process can include many hours with no trade."],
-["Emotional Decision-Making","Emotions become dangerous when they change risk, entry or exit rules without evidence.","Create if/then rules: if daily loss limit is hit, stop; if sleep or focus is inadequate, do not trade; if setup is incomplete, no entry."],
-["Routines","A routine reduces decision fatigue. A useful routine includes market scan, calendar check, scenario mapping, risk calculation, execution and review.","Keep it short enough to perform consistently."],
-["Consistency","Consistency is process repetition, not identical daily profits.","Use a checklist and journal to measure whether you followed your rules."],
-["Losing & Winning Streaks","After losses, avoid increasing size to recover. After wins, avoid assuming the strategy has become more certain.","Keep risk tied to the plan and adjust only through scheduled review."]
-]],
-["TRADING STRATEGIES",[
-["Trend-Following Framework","Conditions: clear directional structure. Timeframe: define a higher timeframe for trend and an execution timeframe. Setup: higher highs/higher lows or lower highs/lower lows plus a pullback. Entry: objective continuation trigger. Stop: beyond structural invalidation. Target: next structure or tested multiple. Risk: fixed predefined amount. Management: no discretionary widening of stops. Invalidations: structural failure or rule violation. Avoid: choppy range conditions. Example: daily structure bullish, 1H pullback into support, bullish trigger, stop below swing, target at prior high. Strength: can capture extended moves. Limitation: gives false signals in ranges. Backtest trend definitions and exit rules."],
-["Breakout Framework","Conditions: well-defined range or level. Timeframe: match the level to the strategy. Setup: compression near boundary. Entry: close or trigger beyond level as defined. Stop: inside invalidation area. Target: measured or structure-based. Risk: fixed. Management: define retest/add rules in advance. Invalidations: rapid return through the level according to your rule. Avoid: major news unless tested. Example: price closes above a six-day range, entry on close or retest, stop below range. Strength: catches expansion. Limitation: false breakouts. Backtest breakout definition, session and volatility filter."],
-["Pullback Framework","Conditions: established trend. Setup: counter-move into structure/level. Entry: continuation candle or defined trigger. Stop: beyond pullback invalidation. Target: prior extreme or tested R multiple. Risk: fixed. Management: no chasing if pullback does not occur. Avoid: weak trend or unclear structure. Example: higher high, retracement to prior support, bullish rejection, entry above trigger. Strength: improves entry location. Limitation: some trends do not pull back. Backtest depth, trigger and target."],
-["Range Framework","Conditions: repeated reactions between boundaries. Setup: price reaches range edge. Entry: rejection/confirmation near boundary. Stop: beyond range invalidation. Target: midrange or opposite boundary. Risk: reduced if volatility rises. Management: avoid entering in the middle. Invalidation: acceptance outside range. Avoid: strong directional expansion. Example: repeated support/resistance with rejection at lower edge. Strength: clear boundaries. Limitation: eventual breakout. Backtest boundary definition and breakout filter."],
-["Support/Resistance Framework","Conditions: meaningful higher-timeframe level. Setup: price returns to zone. Entry: predefined confirmation such as rejection plus structure. Stop: beyond zone/structure. Target: next level. Risk: fixed. Avoid: levels with poor room to target. Example: resistance retest after breakout, bullish/bearish confirmation according to plan. Strength: simple context. Limitation: subjective levels. Backtest level selection and confirmation."],
-["Price-Action Framework","Conditions: defined context and level. Setup: pin bar, engulfing or other specified candle. Entry: objective trigger. Stop: beyond candle/structure. Target: structure or fixed R. Risk: fixed. Management: no changing criteria after entry. Avoid: isolated candles with no context. Example: bearish engulfing at resistance within bearish structure. Strength: clean charts. Limitation: pattern interpretation varies. Backtest exact candle definition."],
-["Moving-Average Framework","Conditions: directional regime according to predefined MA rule. Setup: price pullback toward MA or MA alignment. Entry: defined crossover/price trigger. Stop: structural or volatility-based. Target: tested exit. Risk: fixed. Avoid: sideways markets if the system is trend-based. Example: 50 EMA above 200 EMA, pullback to 50 EMA, bullish trigger. Strength: objective smoothing. Limitation: lag and whipsaw. Backtest lengths, instrument and regime filter."],
-["Multi-Timeframe Framework","Conditions: higher-timeframe context aligns with execution timeframe. Setup: HTF level/structure plus LTF trigger. Entry: LTF rule. Stop: LTF or HTF invalidation. Target: HTF objective. Risk: fixed. Management: no lower-timeframe noise overrides HTF rule unless planned. Avoid: conflicting timeframes. Example: daily uptrend, 4H support, 15M bullish structure break and retest. Strength: combines context and precision. Limitation: complexity and hindsight risk. Backtest every rule and timeframe."]
-]],
-["BACKTESTING & JOURNALING",[
-["What Backtesting Is","Backtesting applies a trading rule to historical data to estimate how it would have behaved under defined assumptions. It is not proof of future profitability.","A useful test is rule-based, repeatable and honest about costs and execution."],
-["Historical Data","Data should match the market, timeframe and product you intend to trade. Check missing candles, corporate actions, contract changes, spreads and timezone.","Poor data can produce misleading results."],
-["Manual Backtesting","Manual testing involves moving through historical charts without using future information, recording every qualifying setup and outcome.","Hide future candles or use a replay tool where possible to reduce hindsight bias."],
-["Sample Size","A small sample can be dominated by randomness. More observations generally provide a better basis for estimating distributions, but changing market regimes still matter.","Do not choose sample size only because the results look attractive."],
-["Hindsight Bias","Knowing what happened makes historical setups look obvious. Prevent this by defining rules before revealing subsequent candles.","If you repeatedly adjust rules after seeing outcomes, you are no longer testing the original strategy."],
-["Overfitting","Overfitting occurs when a strategy becomes excessively tailored to historical noise and performs poorly on new data.","Use simple rules, out-of-sample tests and, where possible, walk-forward validation."],
-["Data Quality & Costs","Include spreads, commissions, financing, slippage and realistic execution assumptions where relevant.","A strategy with a tiny historical edge can disappear after realistic costs."],
-["Trading Journal","Record date, market, direction, timeframe, setup, entry, stop, target, size, planned risk, result and notes.","The journal is evidence about your behaviour as well as strategy performance."],
-["Screenshot Journal","Save before/after screenshots showing context and execution. Annotate the reason for entry and invalidation.","Screenshots help identify recurring mistakes that raw P/L cannot show."],
-["Performance Metrics","Track win rate, average win, average loss, expectancy, profit factor, maximum drawdown, R-multiple distribution and rule compliance.","No single metric tells the whole story."],
-["R-Multiple","R is the amount planned to risk. A +2R trade made twice the planned risk; a -1R trade lost the planned risk.","R normalizes results across different account sizes and position sizes."],
-["Performance Review","Review groups of trades, not isolated outcomes. Separate setup quality, execution quality and market regime.","Change a rule only when evidence suggests the rule needs improvement, then retest the revised version."]
-]],
-["BUILDING A PERSONAL TRADING PLAN",[
-["Market Selection","List markets you understand and can access reliably. Compare liquidity, volatility, cost, hours and product mechanics.","Select a small universe first; specialization can make data collection easier."],
-["Timeframe Selection","Choose timeframes based on schedule, strategy and desired trade frequency. Higher timeframes generally require fewer decisions; lower timeframes demand more attention.","Do not choose a timeframe simply because it produces more signals."],
-["Strategy Selection","Choose one primary framework and define its conditions, trigger, stop, target, risk and no-trade rules.","A strategy is complete only when another person could apply the rules consistently."],
-["Entry Rules","Write observable conditions in checklist form. Avoid phrases such as 'looks strong' unless you define exactly what that means.","Example: close above level + retest holds + trigger candle closes above prior high."],
-["Stop Rules","Define where the setup is invalidated. Do not move the stop farther away simply because price approaches it.","If stop placement is too wide for the planned risk, skip the trade or use an instrument/size compatible with the plan."],
-["Target Rules","Define whether targets are structural, volatility-based or fixed R. Specify partial exits if used.","Avoid changing targets after entry based solely on emotion."],
-["Position Sizing","Calculate size before entry from risk amount and actual instrument value. Include costs and potential slippage where appropriate.","If the calculation cannot be completed reliably, do not enter."],
-["Risk Limits","Set per-trade, daily, weekly and total exposure limits. Define what happens when a limit is hit.","The rule must be automatic enough that it still works after a loss."],
-["Trading Hours","Choose hours where your strategy has been tested. Record timezone and daylight-saving changes.","Avoid trading outside the tested session merely because the market is moving."],
-["News Rules","List events that can materially affect your instruments and define pre/post-news rules.","The rule might be no new positions X minutes before a high-impact event, but the appropriate window must be tested and is not universal."],
-["No-Trade Conditions","Examples include unclear structure, excessive spread, insufficient room to target, daily loss limit reached, emotional impairment or incomplete checklist.","No-trade is a valid decision, not a failure to find opportunity."],
-["Daily Routine","Pre-market: calendar, higher-timeframe structure, levels, scenarios, risk limits. During market: wait, execute, manage. Post-market: screenshot, journal, rule compliance.","A routine should be short enough to follow every session."],
-["Weekly Review","Review R results, win rate, average win/loss, setup distribution, rule violations and emotional patterns.","Look for repeated process errors before changing the strategy."],
-["Monthly Review","Compare performance against prior periods and test whether changes in market regime affected results.","Separate strategy performance from market conditions and execution mistakes."],
-["Completed Trading Plan","Your final plan should fit on a few pages: markets, timeframes, setup definitions, entries, stops, targets, size, risk limits, news rules, schedule, review process and emergency stop rules.","Sign and date the plan. Change it only during scheduled review unless a safety-critical issue requires immediate action."]
-]],
-["THE PROFESSIONAL TRADING PROCESS",[
-["Pre-Market Preparation","Check account risk limits, economic calendar, overnight developments, higher-timeframe structure and key levels. Write two or three scenarios before looking for entries.","The purpose is preparation, not prediction."],
-["Market Scanning","Scan only the instruments in your defined universe. Rank them by whether they meet your setup conditions rather than by how exciting they look.","Consistency in scanning makes journal statistics meaningful."],
-["Scenario Planning","For each market, write: if condition A occurs, I will consider action B; if condition C occurs, I will stand aside.","Scenario planning turns uncertainty into predefined responses."],
-["Trade Execution","Before clicking, confirm direction, entry, stop, target, size, costs and news conditions. Submit the order according to the tested execution rule.","Execution quality includes whether the trade followed the plan, not whether it won."],
-["Trade Management","Do not improvise. Follow predefined rules for stop movement, partial exits, trailing and time-based exits.","Management rules should be tested just like entries."],
-["Post-Trade Review","Record the trade immediately. Save a screenshot and classify the result as win/loss plus process quality.","Ask: Did I follow the plan? Was the setup valid? Was risk correct?"],
-["Weekly Review","Aggregate trades by setup, market, session and R result. Identify recurring errors and strengths.","Do not change a strategy because of one bad week."],
-["Monthly Review","Review a sufficiently large sample, drawdown, expectancy, costs, execution and rule compliance. Decide whether a change needs testing.","Any modification becomes a new hypothesis to test."],
-["Performance Tracking","Track both financial and process metrics. Useful measures include net R, expectancy, drawdown, profit factor, average trade, win rate and rule adherence.","A profitable period with poor rule adherence can be dangerous because it may reward bad behaviour."],
-["Strategy Refinement","Change one variable at a time where possible. Keep a version history so you know which rules produced which results.","Refinement is experimentation, not constant tweaking."],
-["Continuous Education","Continue studying market mechanics, product specifications, risk, statistics and your own data. Education should improve decision quality rather than create more indicators.","Return to primary sources and original data when learning new concepts."],
-["Building Consistency","Consistency comes from repeating a defined process, keeping risk stable and evaluating results over meaningful samples.","The goal is not certainty; it is a controlled response to uncertainty."],
-["Trader's Operating System","1) Protect capital. 2) Define the market and regime. 3) Wait for the exact setup. 4) Calculate risk before entry. 5) Execute without improvisation. 6) Manage only by tested rules. 7) Record every trade. 8) Review statistically. 9) Change rules only from evidence. 10) Repeat.","This operating system cannot guarantee profits. Its purpose is to create a disciplined framework in which decisions, risks and results can be observed and improved."]
-]]
-];
+<h2>What's Inside</h2>
 
-const quizzes=[
-["What does the bid generally represent?","The price at which you can generally sell immediately","The highest price ever traded","The broker's fee","The daily closing price"],
-["What is slippage?","Difference between expected/requested and actual execution price","A guaranteed stop","A chart pattern","A type of leverage"],
-["What does leverage do?","Increases notional exposure relative to capital","Eliminates losses","Guarantees profit","Removes margin requirements"],
-["What does RSI measure conceptually?","Relative strength of recent gains versus losses","Company revenue","Trading fees","Interest rates"],
-["What does ATR primarily measure?","Volatility/range","Direction","Company value","Win rate"],
-["What is a higher high?","A swing high above a prior relevant swing high","Any green candle","A high spread","A high-volume candle only"],
-["What is support best treated as?","A price area where declines have previously been interrupted","A guaranteed floor","A broker limit","A mandatory entry"],
-["What is correlation?","A measure of how two return series have historically moved together","A stop-loss formula","A candle type","A market order"],
-["What is risk amount?","The money planned to be lost if the stop is reached under assumptions","The account balance","The target profit","The spread"],
-["Which formula is correct for simple percentage risk?","Balance × risk percentage","Balance ÷ risk percentage","Stop × target","Win rate × spread"],
-["What is expectancy?","Average expected result per trade based on win/loss probabilities and average outcomes","Maximum leverage","Average spread","Account balance"],
-["What is drawdown?","Decline from an equity peak to a later trough","Daily profit","A stop order","A candle wick"],
-["What is FOMO?","Fear of missing out","A volatility measure","A broker type","A valuation ratio"],
-["What is overfitting?","Tailoring rules too closely to historical noise","Using a stop","Diversifying","Recording trades"],
-["Why use a journal?","To create evidence about strategy and execution","To guarantee profit","To avoid all losses","To predict news"],
-["What should a stop represent?","A predefined invalidation/risk point","A guaranteed exact execution price","A profit target","A broker's opinion"],
-["What is a breakout?","Price movement beyond a defined boundary","Any candle close","A trading fee","A market session"],
-["What is a no-trade condition?","A predefined situation where the strategy says not to enter","A missed opportunity","A guaranteed losing trade","A type of order"],
-["Does a strategy guarantee profit?","No","Yes","Only with leverage","Only with indicators"],
-["What is the purpose of a trading plan?","To define repeatable decisions, risk and review rules","To predict every market move","To eliminate uncertainty","To guarantee a target return"]
-];
+<div class="grid">
 
-function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
-function buildCourse(){
- let n=0,html="";
- modules.forEach((m,mi)=>{
-  html+=`<div class="module"><div class="module-head" onclick="this.parentElement.classList.toggle('open')"><div class="module-title"><div class="num">${String(mi+1).padStart(2,'0')}</div><div><b>${m[0]}</b><div class="muted small">${m[1].length} lessons</div></div></div><span>＋</span></div><div class="lessons">`;
-  m[1].forEach((l,li)=>{
-   n++; const id=`L${n}`;
-   html+=`<div class="lesson" data-id="${id}"><button onclick="openLesson(event,this.parentElement)"><span class="check" onclick="toggleDone(event,'${id}')">✓</span><span><b>${n}. ${l[0]}</b><br><span class="muted small">Study lesson</span></span></button><div class="lesson-content"><h4>Core concept</h4><p>${l[1]}</p><h4>Deep dive</h4><p>${l[2]}</p><div class="example"><b>Study rule:</b> Translate this lesson into one objective rule or observation you could record in a journal. Do not turn an educational example into a promise of future performance.</div><h4>Check yourself</h4><p>Can you explain the concept in your own words, identify its limitations, and describe how you would test it before risking money?</p></div></div>`;
-  }); html+="</div></div>";
- }); document.getElementById("curriculum").innerHTML=html;document.getElementById("lessonCount").textContent=n;restoreProgress();}
+<div class="card">
+<h3>01 — Market Foundations</h3>
+<p>Understand the fundamentals of financial markets and trading.</p>
+</div>
 
-function openLesson(e,el){if(e.target.classList.contains("check"))return;el.classList.toggle("active")}
-function toggleDone(e,id){e.stopPropagation();let done=JSON.parse(localStorage.getItem("tmc_done")||"[]");if(done.includes(id))done=done.filter(x=>x!==id);else done.push(id);localStorage.setItem("tmc_done",JSON.stringify(done));document.querySelector(`[data-id="${id}"]`).classList.toggle("done",done.includes(id));updateProgress()}
-function restoreProgress(){let done=JSON.parse(localStorage.getItem("tmc_done")||"[]");done.forEach(id=>{let x=document.querySelector(`[data-id="${id}"]`);if(x)x.classList.add("done")});updateProgress()}
-function updateProgress(){let total=document.querySelectorAll(".lesson").length,done=document.querySelectorAll(".lesson.done").length,p=total?Math.round(done/total*100):0;document.getElementById("pct").textContent=p;document.getElementById("progressFill").style.width=p+"%"}
-function riskCalc(){let b=+balance.value,r=+riskPct.value,s=+stopDist.value,v=+valuePoint.value,a=b*r/100,size=(s*v)>0?a/(s*v):0;riskOut.innerHTML=`Risk amount: <b>R${a.toFixed(2)}</b><br>Approx. position size: <b>${size.toFixed(4)} units</b><br><span class="small muted">Verify the instrument's real point/tick/pip value, contract size and currency conversion.</span>`}
-function rrCalc(){let e=+entry.value,s=+stop.value,t=+target.value,r=Math.abs(e-s),rw=Math.abs(t-e),rr=r?rw/r:0;rrOut.innerHTML=`Risk: <b>${r.toFixed(4)}</b><br>Reward: <b>${rw.toFixed(4)}</b><br>R:R: <b>${rr.toFixed(2)} : 1</b>`}
-const checks=["Market context defined","Setup confirmed","Entry confirmed","Stop confirmed","Position size calculated","Risk acceptable","No major news conflict","No emotional/impulsive reason for entry"];
-function renderChecklist(){checklist.innerHTML=checks.map((x,i)=>`<label><input type="checkbox" data-c="${i}"> ${x}</label>`).join("");let s=JSON.parse(localStorage.getItem("tmc_checks")||"[]");document.querySelectorAll("[data-c]").forEach((x,i)=>x.checked=s.includes(i));document.querySelectorAll("[data-c]").forEach(x=>x.onchange=saveChecks)}
-function saveChecks(){let s=[...document.querySelectorAll("[data-c]")].filter(x=>x.checked).map(x=>+x.dataset.c);localStorage.setItem("tmc_checks",JSON.stringify(s))}
-function resetChecklist(){localStorage.removeItem("tmc_checks");renderChecklist()}
-function saveJournal(){let ids=["jDate","jMarket","jDir","jTf","jSetup","jEntry","jStop","jTarget","jSize","jRisk","jResult","jNotes","jLesson"],o={};ids.forEach(id=>o[id]=document.getElementById(id).value);let a=JSON.parse(localStorage.getItem("tmc_journal")||"[]");a.unshift(o);localStorage.setItem("tmc_journal",JSON.stringify(a));renderJournal()}
-function renderJournal(){let a=JSON.parse(localStorage.getItem("tmc_journal")||"[]");journalList.innerHTML=a.length?a.map((o,i)=>`<div class="journal-entry"><b>${escapeHtml(o.jDate)} · ${escapeHtml(o.jMarket)} · ${escapeHtml(o.jDir)}</b><div class="muted small">${escapeHtml(o.jTf)} · ${escapeHtml(o.jSetup)} · Entry ${escapeHtml(o.jEntry)} · Stop ${escapeHtml(o.jStop)} · Target ${escapeHtml(o.jTarget)} · Result ${escapeHtml(o.jResult)}</div><p>${escapeHtml(o.jNotes)}</p><b>Lesson:</b> ${escapeHtml(o.jLesson)} <button class="btn" onclick="deleteJournal(${i})" style="float:right">Delete</button></div>`).join(""):"<div class='muted'>No trades saved yet.</div>"}
-function deleteJournal(i){let a=JSON.parse(localStorage.getItem("tmc_journal")||"[]");a.splice(i,1);localStorage.setItem("tmc_journal",JSON.stringify(a));renderJournal()}
-function buildQuiz(){quiz.innerHTML=quizzes.map((q,i)=>`<div class="q"><b>${i+1}. ${q[0]}</b>${q.slice(1).map((a,j)=>`<label><input type="radio" name="q${i}" value="${j}"> ${a}</label>`).join("")}</div>`).join("")}
-function gradeQuiz(){let score=0,answered=0,wrong=[];quizzes.forEach((q,i)=>{let x=document.querySelector(`input[name=q${i}]:checked`);if(x){answered++;if(+x.value===0)score++;else wrong.push(i+1)}});let pct=Math.round(score/quizzes.length*100);scoreBox.classList.remove("hide");scoreBox.innerHTML=`<div class="score">${score}/${quizzes.length} — ${pct}%</div><p>Answered: ${answered}/${quizzes.length}. ${wrong.length?`Review questions: ${wrong.join(", ")}.`:"All selected answers were correct."}</p><p class="muted">This assessment measures course knowledge only. It does not establish trading competence, suitability or future performance.</p>`;scoreBox.scrollIntoView({behavior:"smooth",block:"center"})}
-year.textContent=new Date().getFullYear();buildCourse();renderChecklist();renderJournal();buildQuiz();riskCalc();rrCalc();
-</script>
+<div class="card">
+<h3>02 — Technical Analysis</h3>
+<p>Learn how to read price action, charts and market structure.</p>
+</div>
+
+<div class="card">
+<h3>03 — Trading Strategy</h3>
+<p>Build a structured approach instead of trading randomly.</p>
+</div>
+
+<div class="card">
+<h3>04 — Risk Management</h3>
+<p>Understand position sizing, risk and protecting your capital.</p>
+</div>
+
+<div class="card">
+<h3>05 — Trading Psychology</h3>
+<p>Learn the importance of discipline and emotional control.</p>
+</div>
+
+<div class="card">
+<h3>06 — Practical Tools</h3>
+<p>Use trading tools to plan, calculate and track your trades.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="price">
+
+<h2>THE MARKET CODE</h2>
+
+<div class="price-number">R1,000</div>
+
+<p class="small">
+One-time purchase through Payhip.
+</p>
+
+<a class="btn" href="https://payhip.com/b/eOu6V" target="_blank" rel="noopener">
+BUY THE COURSE
+</a>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 THE MARKET CODE. All rights reserved.</p>
+<p class="small">
+Educational content only. Trading involves risk and losses can occur.
+</p>
+</footer>
+
 </body>
 </html>
